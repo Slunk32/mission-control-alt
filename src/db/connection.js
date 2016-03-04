@@ -18,6 +18,10 @@ if (process.env.NODE_ENV === 'test') {
       password: process.env.DB_PASS,
       database: process.env.DB_NAME,
       port: process.env.DB_PORT
+    },
+    pool: {
+      min: 2,
+      max: 10
     }
   })
 }
