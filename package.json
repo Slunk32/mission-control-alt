@@ -21,8 +21,6 @@
   "scripts": {
     "test": "NODE_ENV=test ./node_modules/.bin/tap --reporter=spec test/**/spec.*.js",
     "lint": "./node_modules/.bin/eslint .",
-    "cover": "./node_modules/.bin/istanbul cover ./node_modules/argg test/**/*.js && open ./coverage/lcov-report/index.html",
-    "coveralls": "npm run cover && ./node_modules/.bin/coveralls < ./coverage/lcov.info",
     "release": "npm run lint && npm run cover",
     "postinstall": "node_modules/.bin/gulp"
   },
