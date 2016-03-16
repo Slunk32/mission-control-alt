@@ -1,6 +1,7 @@
 'use strict'
 
-const watchBabel = require("watch-babel")
+const watchBabel = require('watch-babel')
+const pm2 = require('pm2')
 
 const srcDir = "src"
 const destDir = "src-build"
@@ -12,6 +13,7 @@ watcher.on("ready", function() {
 
 watcher.on("success", function(filepath) {
   console.log("Transpiled ", filepath)
+  // TODO: restart the server and worker with pm2
 })
 
 watcher.on("failure", function(filepath, e) {
