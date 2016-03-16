@@ -1,4 +1,6 @@
-# Mission Control Core *(work in progress)*
+# DO NOT USE
+
+Refactor of Mission Control
 
 [![Build Status](https://travis-ci.org/space-race/mc-core.svg)](https://travis-ci.org/space-race/mc-core)
 [![Dependency Status](https://david-dm.org/space-race/mc-core.svg)](https://david-dm.org/space-race/mc-core)
